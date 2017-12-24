@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'webpack' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack
+8 silly fetchNamedPackageData webpack
+9 silly mapToRegistry name webpack
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'webpack',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'webpack',
+12 silly mapToRegistry   name: 'webpack',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/webpack
+14 verbose request uri https://registry.npmjs.org/webpack
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 20:58:15
+17 verbose request id f5f6c432ad4d6355
+18 verbose etag "5a33d10a-11560f"
+19 verbose lastModified Fri, 15 Dec 2017 13:41:30 GMT
+20 http request GET https://registry.npmjs.org/webpack
+21 http 200 https://registry.npmjs.org/webpack
+22 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+22 verbose headers   server: 'UploadServer',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'last-modified': 'Fri, 22 Dec 2017 11:51:29 GMT',
+22 verbose headers   etag: '"5a3cf1c1-116c36"',
+22 verbose headers   'content-encoding': 'gzip',
+22 verbose headers   'content-length': '60048',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Sun, 24 Dec 2017 19:58:14 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   age: '188',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-hhn1549-HHN',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '2',
+22 verbose headers   'x-timer': 'S1514145494.255376,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 200,
+23 silly get   { 'content-type': 'application/json; charset=UTF-8',
+23 silly get     server: 'UploadServer',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'last-modified': 'Fri, 22 Dec 2017 11:51:29 GMT',
+23 silly get     etag: '"5a3cf1c1-116c36"',
+23 silly get     'content-encoding': 'gzip',
+23 silly get     'content-length': '60048',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Sun, 24 Dec 2017 19:58:14 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '188',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-hhn1549-HHN',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '2',
+23 silly get     'x-timer': 'S1514145494.255376,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose get saving webpack to C:\Users\symfony\AppData\Roaming\npm-cache\registry.npmjs.org\webpack\.cache.json
+25 verbose correctMkdir C:\Users\symfony\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: Refusing to install webpack as a dependency of itself
+42 verbose stack     at checkSelf (C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:53:14)
+42 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+42 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+42 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:16:5
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at asyncMap (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+43 verbose cwd D:\github\webpack
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "webpack"
+46 error node v6.9.2
+47 error npm  v3.10.9
+48 error code ENOSELF
+49 error Refusing to install webpack as a dependency of itself
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -1,0 +1,1 @@
+webpack assets/app.js dist/bundle.js
