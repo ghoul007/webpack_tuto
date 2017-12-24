@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack",
+    "prod": "NODE_ENV=dev webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,6 +13,11 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "jquery": "^3.2.1",
+    "webpack": "3.5.5"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.4"
   }
 }
