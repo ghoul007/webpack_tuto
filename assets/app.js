@@ -1,2 +1,3 @@
-import  * as obj from './log.js'
-console.log(obj)
+import  {log}   from './log.js'
+let a  =  "salut"
+log(a)

@@ -65,33 +65,36 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__log_js__ = __webpack_require__(1);
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__log_js__)
+
+var _log = __webpack_require__(1);
+
+var a = "salut";
+(0, _log.log)(a);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["log"] = log;
-/* harmony export (immutable) */ __webpack_exports__["log2"] = log2;
-function log (val){
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.log = log;
+exports.log2 = log2;
+function log(val) {
   console.log(val);
 }
 
- 
-function log2 (val){
+function log2(val) {
   console.log(val);
   console.log(val);
 }
-
- 
 
 /***/ })
 /******/ ]);
