@@ -1,2 +1,2 @@
-import  {log2} from './log.js'
-log2('salut');
+import  * as obj from './log.js'
+console.log(obj)
