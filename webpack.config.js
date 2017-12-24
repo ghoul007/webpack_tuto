@@ -5,7 +5,7 @@ const dev = process.env.NODE_ENV === "dev";
 
 let config = {
   entry: "./assets/app.js",
-  watch: dev,
+  watch: true,
   output: {
     path: path.resolve("./dist"),
     filename: "bundle.js"
@@ -17,6 +17,14 @@ let config = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: ["babel-loader"]
+      },
+      {
+        test: /\.css$/,
+        use:["style-loader","css-loader"]
+      },
+      {
+        test: /\.scss$/,
+        use:["style-loader","css-loader","sass-loader"]
       }
     ]
   },
